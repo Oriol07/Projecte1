@@ -1,0 +1,2 @@
+G:\Forces of Wisdom\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+G:\Forces of Wisdom\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
