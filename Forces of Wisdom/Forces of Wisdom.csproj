@@ -14,7 +14,6 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.2f1</UnityVersion>
@@ -85,9 +84,10 @@
     <Compile Include="Assets\MovimentBola.cs" />
     <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\Prefabs\BolaMag.cs" />
-    <Compile Include="Assets\Scriptd\PlayerControl.cs" />
-    <Compile Include="Assets\Scriptd\SeguiCam.cs" />
-    <Compile Include="Assets\Scriptd\canviNivell.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\SeguiCam.cs" />
+    <Compile Include="Assets\Scripts\canviNivell.cs" />
+    <Compile Include="Assets\Scripts\cofre.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
