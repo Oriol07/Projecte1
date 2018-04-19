@@ -21,10 +21,10 @@ public class PlayerControl : MonoBehaviour {
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
             );
-        if (Input.GetMouseButtonDown(0) && playerAttack.fireRate == 0){
+        if (playerAttack.fireRate == 0){
             playerAttack.Atacant();
         }
-        if (Input.GetMouseButton(0) && playerAttack.fireRate > 0)
+        if (playerAttack.fireRate > 0)
         {
             playerAttack.Atacant();
         }

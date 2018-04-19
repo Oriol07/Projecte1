@@ -36,22 +36,27 @@ public class PlayerAttack : MonoBehaviour {
     void Shoot()
     {
         Vector2 firepos = new Vector2(weaponTip.position.x, weaponTip.position.y);
-        Vector2 dir = new Vector2(x, y);
+        Vector2 dir = new Vector2(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"));
 
         RaycastHit2D hit = Physics2D.Raycast(firepos, dir, range, Objectiu);
         Debug.DrawRay(firepos, dir * range, Color.blue, 1f);
         DrawBola();
+       
 
     }
+
 	// Update is called once per frame
 	void Update () {
-        x = Input.GetAxis("Mouse X");
-        y = Input.GetAxis("Mouse Y");
+     /*   x = Input.GetAxis("Mouse X");
+        y = Input.GetAxis("Mouse Y"); */
     }
     void DrawBola()
     {
-        Quaternion rot = Quaternion.Euler(x, y, 1);
-        Instantiate(bulletPrefab, weaponTip.position, rot);
+     
+            Quaternion rot = Quaternion.Euler(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"), 1);
+            Instantiate(bulletPrefab, weaponTip.position, rot);
+            //Instantiate(bulletPrefab, weaponTip.position, rot);
+        
     }
 
    

@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MovimentBola.cs" />
+    <Compile Include="Assets\Player\Vida\BarraVida.cs" />
     <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\Prefabs\BolaMag.cs" />
     <Compile Include="Assets\Scriptd\PlayerControl.cs" />
