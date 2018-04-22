@@ -17,6 +17,7 @@ public class BarraVida : MonoBehaviour
         CurrentHealth -= value;
         if (CurrentHealth <= 0)
         {
+            Destroy(this);
             CurrentHealth = 0;
         }
         HealthBar.size = CurrentHealth / 100f;
