@@ -6,13 +6,15 @@ public class MovimentBola : MonoBehaviour {
 
     public int velocitat = 5;
     public float TimeToDestroy = 3f;
+    public float MaximumRange = 30;
+    int count = 0;
     Event e = Event.current;
-    Vector2 mousePos = new Vector2();
     Vector3 Dir = new Vector3();
     Camera cam;
     Transform my;
     Rigidbody2D body;
     TargetEnemy targetEnemy;
+    
 
     void Start()
     {
@@ -23,11 +25,15 @@ public class MovimentBola : MonoBehaviour {
     }
     void Update()
     {
-        
-        Vector3 mouse = new Vector3(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"), 0);
-        
-        
-        transform.Translate(mouse * Time.deltaTime * velocitat, Camera.main.transform); // no segueix camera
+
+        Vector3 defTarget = new Vector3(velocitat, 0, 0);
+        transform.Translate(defTarget);
+        count++;
+        if (count > MaximumRange)
+        {
+            count = 0;
+            DestroyObject(this.gameObject);
+        }
 
         onEnable();
         /*if (Input.GetMouseButtonDown(0))
