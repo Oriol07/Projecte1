@@ -81,13 +81,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EnemyAI.cs" />
     <Compile Include="Assets\MovimentBola.cs" />
+    <Compile Include="Assets\Player\Vida\BarraVida.cs" />
     <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\Prefabs\BolaMag.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\SeguiCam.cs" />
     <Compile Include="Assets\Scripts\canviNivell.cs" />
     <Compile Include="Assets\Scripts\cofre.cs" />
+=======
+    <Compile Include="Assets\Scriptd\PlayerControl.cs" />
+    <Compile Include="Assets\Scriptd\SeguiCam.cs" />
+    <Compile Include="Assets\Scriptd\TargetEnemy.cs" />
+    <Compile Include="Assets\Scriptd\canviNivell.cs" />
+>>>>>>> master
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
