@@ -4,37 +4,20 @@ using UnityEngine;
 
 public class BolaMag : MonoBehaviour
 {
-    public int velocitat = 100;
-    public float TimeToDestroy = 3f;
-
-
-
-    // Use this for initialization
-    void Start()
+    void OnCollisionEnter2D(Collision2D col)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Vector3.right * Time.deltaTime * velocitat);
-    }
-    void onEnable()
-    {
-        StartCoroutine_Auto(AutoDestroy(TimeToDestroy));
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "MAP")
+        if (col.gameObject.tag == "Enemic")
         {
-            Object.Destroy(this.gameObject); // M’elimino
+            var hit = col.gameObject;
+            var health = hit.GetComponent<BarraVida>();
+            if (health != null)
+            {
+                health.Damage(10);
+            }
+            if (health == null) Destroy(col.gameObject);
+            Destroy(gameObject);
         }
-    } 
-    IEnumerator AutoDestroy (float time)
-    {
-        yield return new WaitForSeconds(time);
 
-        Destroy(gameObject);
+
     }
 }

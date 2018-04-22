@@ -6,14 +6,20 @@ public class TargetEnemy : MonoBehaviour {
 
     public List<Transform> objectius;
     public Transform selectedTarget;
+    private RendEnemic rendEnemic;
     private Transform myTransform;
+    public GameObject PrefabOrc;
+    private bool FocusOgro;
+
     // Use this for initialization
     void Start () {
         objectius = new List<Transform>();
         AfegirEnemics();
         myTransform = transform;
-        
-	}
+        rendEnemic = GetComponent<RendEnemic>();
+        FocusOgro = true;
+
+    }
 	
     public void AfegirEnemics()
     {
@@ -48,8 +54,26 @@ public class TargetEnemy : MonoBehaviour {
                 index = 0;
             }
             selectedTarget = objectius[index];
+            SelecTarget();
         }
     }
+
+    void SelecTarget()
+    {
+        Transform result = gameObject.transform.Find("ogro");
+            if (result == selectedTarget)
+            {
+            Debug.Log("Found Ogro");
+            FocusOgro = false;
+            }
+            else
+            {
+                Debug.Log("Did not find sphere3");
+            }
+
+    }
+
+ 
     void TargetsPerDist()
     {
         objectius.Sort(delegate(Transform t1, Transform t2) {

@@ -12,21 +12,24 @@ public class MovimentBola : MonoBehaviour {
     Camera cam;
     Transform my;
     Rigidbody2D body;
+    TargetEnemy targetEnemy;
 
     void Start()
     {
         cam = Camera.main;
         my = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
+        targetEnemy = GetComponent<TargetEnemy>();
     }
     void Update()
     {
         
-        Vector3 mouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+        Vector3 mouse = new Vector3(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"), 0);
+        
         
         transform.Translate(mouse * Time.deltaTime * velocitat, Camera.main.transform); // no segueix camera
 
-
+        onEnable();
         /*if (Input.GetMouseButtonDown(0))
         {
 
@@ -52,5 +55,7 @@ public class MovimentBola : MonoBehaviour {
 
         Destroy(gameObject);
     }
+
+
 }
 
