@@ -82,8 +82,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\IAogro.cs" />
+    <Compile Include="Assets\MovBolaTrampa.cs" />
     <Compile Include="Assets\Player\Vida\BarraVida.cs" />
     <Compile Include="Assets\Prefabs\BolaMag.cs" />
+    <Compile Include="Assets\Scriptd\BolaTrampa.cs" />
     <Compile Include="Assets\Scriptd\EnemyAI.cs" />
     <Compile Include="Assets\Scriptd\Inventory.cs" />
     <Compile Include="Assets\Scriptd\MovimentBola.cs" />

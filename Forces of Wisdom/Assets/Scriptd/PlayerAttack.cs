@@ -54,10 +54,11 @@ public class PlayerAttack : MonoBehaviour {
     }
     void DrawBola()
     {
-     
-            Quaternion rot = Quaternion.Euler(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"), 1);
-            Instantiate(bulletPrefab, weaponTip.position, rot);
-            //Instantiate(bulletPrefab, weaponTip.position, rot);
+        if (Input.GetKeyDown("F")){ 
+        Quaternion rot = Quaternion.Euler(Input.GetAxisRaw("HorizontalShoot"), Input.GetAxisRaw("VerticalShoot"), 1);
+        Instantiate(bulletPrefab, weaponTip.position, rot);
+        //Instantiate(bulletPrefab, weaponTip.position, rot);
+    }
         
     }
 

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovimentBola : MonoBehaviour {
+public class MovBolaTrampa : MonoBehaviour
+{
 
-    public float velocitat = 0.1f;
+    public float velocitat = 0.5f;
     public float TimeToDestroy = 3f;
     public float MaximumRange = 30;
     int count = 0;
@@ -14,7 +15,7 @@ public class MovimentBola : MonoBehaviour {
     Transform my;
     Rigidbody2D body;
     TargetEnemy targetEnemy;
-    
+
 
     void Start()
     {
@@ -64,4 +65,3 @@ public class MovimentBola : MonoBehaviour {
 
 
 }
-
