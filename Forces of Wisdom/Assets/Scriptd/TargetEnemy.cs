@@ -6,20 +6,29 @@ public class TargetEnemy : MonoBehaviour {
 
     public List<Transform> objectius;
     public Transform selectedTarget;
+<<<<<<< Updated upstream
     private RendEnemic rendEnemic;
     private Transform myTransform;
     public GameObject PrefabOrc;
     private bool FocusOgro;
 
+=======
+    private Transform myTransform;
+>>>>>>> Stashed changes
     // Use this for initialization
     void Start () {
         objectius = new List<Transform>();
         AfegirEnemics();
         myTransform = transform;
+<<<<<<< Updated upstream
         rendEnemic = GetComponent<RendEnemic>();
         FocusOgro = true;
 
     }
+=======
+        
+	}
+>>>>>>> Stashed changes
 	
     public void AfegirEnemics()
     {
@@ -54,6 +63,7 @@ public class TargetEnemy : MonoBehaviour {
                 index = 0;
             }
             selectedTarget = objectius[index];
+<<<<<<< Updated upstream
             SelecTarget();
         }
     }
@@ -74,6 +84,10 @@ public class TargetEnemy : MonoBehaviour {
     }
 
  
+=======
+        }
+    }
+>>>>>>> Stashed changes
     void TargetsPerDist()
     {
         objectius.Sort(delegate(Transform t1, Transform t2) {
