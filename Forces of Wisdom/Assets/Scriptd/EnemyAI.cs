@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class EnemyAI : MonoBehaviour {
+    public Vector2 targetPoint;
     int waypoint = 0;
     float xB = 70;
     float yB = 40;
@@ -57,8 +60,8 @@ public class EnemyAI : MonoBehaviour {
         switch (waypoint)
         {
             case -1:
-                x = targetCheck[0];
-                y = targetCheck[1];
+                x = targetCheck[0]-200;
+                y = targetCheck[1]-200;
                 break;
             case 1:
                 x = -15;

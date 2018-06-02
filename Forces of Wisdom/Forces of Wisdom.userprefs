@@ -1,8 +1,9 @@
-﻿<Properties StartupItem="Forces of Wisdom.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptd\PlayerControl.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MovBolaTrampa.cs">
     <Files>
       <File FileName="Assets\Scriptd\PlayerControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\MovBolaTrampa.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

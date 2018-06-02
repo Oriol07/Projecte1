@@ -4,26 +4,39 @@ using UnityEngine;
 
 public class pinxos : MonoBehaviour {
 
-    private PlayerControl playerControl;
+   
     private PlayerAttack playerAttack;
+    public GameObject trampa;
     Collider2D pinxoscol;
+    float timeMove = 0;
 
-	void Start () {
+    void Start () {
         pinxoscol = this.GetComponent<Collider2D>();
 
 	}
 	
 	
 	void Update () {
-		
+        if ((Time.time) > timeMove)
+        {
+            timeMove = (Time.time + 4);
+            if (pinxoscol.enabled == true)
+            {
+                pinxosOff();
+            }
+            else
+            {
+                pinxosOn();
+            }
+        }
 	}
 
-    public void pinxosOn()
+    void pinxosOn()
     {
         pinxoscol.enabled = true;
 
     }
-    public void pinxos0ff()
+    void pinxosOff()
     {
         pinxoscol.enabled = false;
     }

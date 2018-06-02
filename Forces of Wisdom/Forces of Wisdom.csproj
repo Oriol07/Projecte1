@@ -14,7 +14,6 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.2f1</UnityVersion>
@@ -82,13 +81,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\IAogro.cs" />
-    <Compile Include="Assets\MovBolaTrampa.cs" />
     <Compile Include="Assets\Player\Vida\BarraVida.cs" />
     <Compile Include="Assets\Prefabs\BolaMag.cs" />
     <Compile Include="Assets\Scriptd\BolaTrampa.cs" />
     <Compile Include="Assets\Scriptd\EnemyAI.cs" />
+    <Compile Include="Assets\Scriptd\IAogro.cs" />
     <Compile Include="Assets\Scriptd\Inventory.cs" />
+    <Compile Include="Assets\Scriptd\MovBolaTrampa.cs" />
     <Compile Include="Assets\Scriptd\MovimentBola.cs" />
     <Compile Include="Assets\Scriptd\PlayerAttack.cs" />
     <Compile Include="Assets\Scriptd\PlayerControl.cs" />
@@ -99,6 +98,7 @@
     <Compile Include="Assets\Scriptd\canviNivell.cs" />
     <Compile Include="Assets\Scriptd\cofre.cs" />
     <Compile Include="Assets\Scriptd\interactItems.cs" />
+    <Compile Include="Assets\Scriptd\moviment_trampa_pinxos.cs" />
     <Compile Include="Assets\Scriptd\pinxos.cs" />
     <Compile Include="Assets\Scriptd\playerInteracte.cs" />
   </ItemGroup>

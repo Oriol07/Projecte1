@@ -5,9 +5,10 @@ using System.Collections;
 public class BarraVida : MonoBehaviour
 {
   
-    public Scrollbar HealthBar;
+    public RectTransform HealthBar;
     public int CurrentHealth = 100;
     Collider2D BolaCol;
+    
     public void Start()
     {
        
@@ -20,7 +21,7 @@ public class BarraVida : MonoBehaviour
             Destroy(this);
             CurrentHealth = 0;
         }
-        HealthBar.size = CurrentHealth / 100f;
+        HealthBar.sizeDelta = new Vector2(CurrentHealth, HealthBar.sizeDelta.y);
     }
 
 
