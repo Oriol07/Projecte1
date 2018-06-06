@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.2f1</UnityVersion>
@@ -81,26 +82,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Player\Vida\BarraVida.cs" />
-    <Compile Include="Assets\Prefabs\BolaMag.cs" />
-    <Compile Include="Assets\Scriptd\BolaTrampa.cs" />
-    <Compile Include="Assets\Scriptd\EnemyAI.cs" />
-    <Compile Include="Assets\Scriptd\IAogro.cs" />
-    <Compile Include="Assets\Scriptd\Inventory.cs" />
-    <Compile Include="Assets\Scriptd\MovBolaTrampa.cs" />
-    <Compile Include="Assets\Scriptd\MovimentBola.cs" />
-    <Compile Include="Assets\Scriptd\PlayerAttack.cs" />
-    <Compile Include="Assets\Scriptd\PlayerControl.cs" />
-    <Compile Include="Assets\Scriptd\PositionUI.cs" />
-    <Compile Include="Assets\Scriptd\RendEnemic.cs" />
-    <Compile Include="Assets\Scriptd\SeguiCam.cs" />
-    <Compile Include="Assets\Scriptd\TargetEnemy.cs" />
-    <Compile Include="Assets\Scriptd\canviNivell.cs" />
-    <Compile Include="Assets\Scriptd\cofre.cs" />
-    <Compile Include="Assets\Scriptd\interactItems.cs" />
-    <Compile Include="Assets\Scriptd\moviment_trampa_pinxos.cs" />
-    <Compile Include="Assets\Scriptd\pinxos.cs" />
-    <Compile Include="Assets\Scriptd\playerInteracte.cs" />
+    <Compile Include="Assets\All assets\Scriptd\AIBoss.cs" />
+    <Compile Include="Assets\All assets\Scriptd\BarraVida.cs" />
+    <Compile Include="Assets\All assets\Scriptd\BolaMag.cs" />
+    <Compile Include="Assets\All assets\Scriptd\BolaTrampa.cs" />
+    <Compile Include="Assets\All assets\Scriptd\EnemyAI.cs" />
+    <Compile Include="Assets\All assets\Scriptd\IAogro.cs" />
+    <Compile Include="Assets\All assets\Scriptd\Inventory.cs" />
+    <Compile Include="Assets\All assets\Scriptd\MainMenu.cs" />
+    <Compile Include="Assets\All assets\Scriptd\MovBolaTrampa.cs" />
+    <Compile Include="Assets\All assets\Scriptd\MovimentBola.cs" />
+    <Compile Include="Assets\All assets\Scriptd\PlayerAttack.cs" />
+    <Compile Include="Assets\All assets\Scriptd\PlayerControl.cs" />
+    <Compile Include="Assets\All assets\Scriptd\PositionUI.cs" />
+    <Compile Include="Assets\All assets\Scriptd\RendEnemic.cs" />
+    <Compile Include="Assets\All assets\Scriptd\SeguiCam.cs" />
+    <Compile Include="Assets\All assets\Scriptd\TargetEnemy.cs" />
+    <Compile Include="Assets\All assets\Scriptd\canviNivell.cs" />
+    <Compile Include="Assets\All assets\Scriptd\cofre.cs" />
+    <Compile Include="Assets\All assets\Scriptd\enemic2itin.cs" />
+    <Compile Include="Assets\All assets\Scriptd\interactItems.cs" />
+    <Compile Include="Assets\All assets\Scriptd\moviment_trampa_pinxos.cs" />
+    <Compile Include="Assets\All assets\Scriptd\pinxos.cs" />
+    <Compile Include="Assets\All assets\Scriptd\playerInteracte.cs" />
+    <Compile Include="Assets\All assets\Scriptd\proximityIT.cs" />
+    <Compile Include="Assets\All assets\Scriptd\sorollDisparar.cs" />
+    <Compile Include="Assets\All assets\Scriptd\sorollPinxos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\04b_03\iceland\Terms of Use End User Lisence Agreement.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
