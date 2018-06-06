@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class proximityIT : MonoBehaviour
 {
@@ -67,6 +68,7 @@ public class proximityIT : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             Destroy(col.gameObject);
+            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
             Destroy(gameObject);
         }
 

@@ -72,9 +72,10 @@
      <Compile Include="Assets\All assets\Scriptd\proximityIT.cs" />
      <Compile Include="Assets\All assets\Scriptd\sorollDisparar.cs" />
      <Compile Include="Assets\All assets\Scriptd\sorollPinxos.cs" />
+     <Compile Include="Assets\partnerTest.cs" />
      <None Include="Assets\04b_03\iceland\Terms of Use End User Lisence Agreement.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Joan/Desktop/test FOW/Forces of Wisdom/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Joan/Desktop/Forces of Wisdom/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

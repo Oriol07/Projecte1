@@ -108,6 +108,8 @@
     <Compile Include="Assets\All assets\Scriptd\proximityIT.cs" />
     <Compile Include="Assets\All assets\Scriptd\sorollDisparar.cs" />
     <Compile Include="Assets\All assets\Scriptd\sorollPinxos.cs" />
+    <Compile Include="Assets\Text.cs" />
+    <Compile Include="Assets\partnerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\04b_03\iceland\Terms of Use End User Lisence Agreement.txt" />
